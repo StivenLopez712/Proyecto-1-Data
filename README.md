@@ -70,7 +70,9 @@ En el caso del modelo, se tomó la tabla creada en el EDA: 'Recomendacion.parque
 Todo el proceso de creacion de funciones y del modelo (además de los archivos .parquet necesarios)están disponibles en el archivo 'Funciones_API.ipynb'. </p>
 
 ## Render y FastAPI
-<p style="text-align: justify;">Para poder deployar nuestras funciones en Fast API usamos render, cuyo plan gratuito cuenta con 512mb de almacenamiento y 0.15 CPU, es por esto que fue necesario guardar los datos usados en las funciones como formato parquet.
+<p style="text-align: justify;">
+En este punto, fue necesario el uso de un entorno virtual, creado en la carpeta local del proyecto, ya que ayuda a garantizar la consistencia, la reproducibilidad y la portabilidad del proyecto al implementarlo en diferentes entornos o servicios en la nube, como lo es render.
+Para poder deployar nuestras funciones en Fast API usamos render, cuyo plan gratuito cuenta con 512mb de almacenamiento y 0.15 CPU, es por esto que fue necesario guardar los datos usados en las funciones como formato parquet y reducir las tablas lo máximo posible.
 
 En render se usó la funcion de Web Services, se vinculó el repositorio 'https://github.com/StivenLopez712/Deploy_API'(se creó un repositorio solamente para el deploy con el fin de agilizar el proceso), y se configuró render con base a los pasos proporcionados en 'https://github.com/StivenLopez712/Deploy_AP'.
 En el archivo main.py se colocaron las funciones ya creadas, cada una con su respectivo '(@app.get(‘/’))', adicionalmente, en el repo yacen los archivos .parquet necesarios, y los archivos requirementes.txt y docker.txt que necesita render.
