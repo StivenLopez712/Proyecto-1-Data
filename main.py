@@ -3,14 +3,15 @@ from fastapi.responses import JSONResponse
 from typing import List
 
 import pandas as pd
-
+#from sklearn.metrics.pairwise import cosine_similarity
+#from sklearn.preprocessing import MinMaxScaler
 
 app = FastAPI()
 
-DF_GAMES = pd.read_parquet('../Parquets/ETL_Steam_Games.gzip')
-DF_REVIEWS = pd.read_parquet('../Parquets/Review_Sentiment_Analysis.gzip')
-DF_ITEMS = pd.read_parquet('../Parquets/ETL_user_items.gzip')
-recomendaciones = pd.read_parquet('../Parquets/Recomendacion.gzip')
+DF_GAMES = pd.read_parquet('Parquets/ETL_Steam_Games.gzip')
+DF_REVIEWS = pd.read_parquet('Parquets/Review_Sentiment_Analysis.gzip')
+DF_ITEMS = pd.read_parquet('Parquets/ETL_user_items.gzip')
+recomendaciones = pd.read_parquet('Parquets/Recomendacion.gzip')
 
 # Función 1
 @app.get('/PlayTimeGenre/{genero}')
