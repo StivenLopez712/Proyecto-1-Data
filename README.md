@@ -93,3 +93,6 @@ Desde render podemos controlar cuando esté o no disponible nuestra API, el link
 - Render es una herramienta muy útil para realizar deployments, sin embargo, también se debe tener mucho cuidado con las rutas de los archivos, el peso de los mismos y la capacidad de procesamiento que estos pueden demandar, ya que si se trabaja con la versión gratuita, los recursos son muy limitados.
 - Las herramientas usadas principalmente fueron:
    Visual Studio Code, Jupyter Notebook, Python, NumPy, Pandas, Matplotlib, scikit-learn, Render, FastAPI, Git, GitHub, Pyarrow y Markdown.
+
+#**LINK AL VIDEO:**
+https://youtu.be/sgdk6ikoDIU
