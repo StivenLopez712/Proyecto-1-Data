@@ -4,7 +4,7 @@ import numpy as np
 app = FastAPI()
 
 # Cargar los datos necesarios
-tabla_funciones = pd.read_parquet('Tabla_API.parquet')
+tabla_funciones = pd.read_parquet('tabla_funciones.parquet')
 F3 = pd.read_parquet('F3.parquet')
 F4 = pd.read_parquet('F4.parquet')
 F5 = pd.read_parquet('F5.parquet')
