@@ -1,5 +1,5 @@
 **<p align="center">Proyecto individual 1</p>**
-**<p align="center">MACHINE LEARNING OPERATIONS (MLOPS)</p**
+**<p align="center">MACHINE LEARNING OPERATIONS (MLOPS)</p>**
 
 ## Introducción
 <p style="text-align: justify;">Durante este proyecto se asumió el rol de un ingeniero de datos y un cientifico de datos (MLOPs engineer), trabajando para la empresa de STEAM, lacual es una plataforma de distribución digital de videojuegos desarrollada por Valve Corporation, lanzada en septiembre de 2003 buscando brindar actualizaciones automáticas para sus productos. Posteriormente se expandió y empezó a incluir títulos de terceros. Cuenta con una base de usuarios que supera los 325 millones, y un catálogo alberga más de 25,000 juegos. Cabe resaltar que las cifras proporcionadas por SteamSpy solo están disponibles hasta el año 2017, puesto que a principios de 2018 Steam implementó restricciones en el consumo de sus estadísticas. 
@@ -46,15 +46,19 @@ Gracias a este proceso de categorizacion y con la columna *'Sentiment_Analysis'*
 <p style="text-align: justify;"> Fueron solicitadas 5 funciones y un modelo:
 
 1. --> def PlayTimeGenre( genero : str ): Debe devolver año con mas horas jugadas para dicho género.
+
 Ejemplo de retorno: {"Año de lanzamiento con más horas jugadas para Género X" : 2013}
 
 2. --> def UserForGenre( genero : str ): Debe devolver el usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año.
+
 Ejemplo de retorno: {"Usuario con más horas jugadas para Género X" : us213ndjss09sdf, "Horas jugadas":[{Año: 2013, Horas: 203}, {Año: 2012, Horas: 100}, {Año: 2011, Horas: 23}]}
 
 3. --> def UsersRecommend( año : int ): Devuelve el top 3 de juegos MÁS recomendados por usuarios para el año dado. (reviews.recommend = True y comentarios positivos/neutrales)
+
 Ejemplo de retorno: [{"Puesto 1" : X}, {"Puesto 2" : Y},{"Puesto 3" : Z}]
 
 4. --> def UsersWorstDeveloper( año : int ): Devuelve el top 3 de desarrolladoras con juegos MENOS recomendados por usuarios para el año dado. (reviews.recommend = False y comentarios negativos)
+
 Ejemplo de retorno: [{"Puesto 1" : X}, {"Puesto 2" : Y},{"Puesto 3" : Z}]
 
 5. --> def sentiment_analysis( empresa desarrolladora : str ): Según la empresa desarrolladora, se devuelve un diccionario con el nombre de la desarrolladora como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor.
@@ -74,10 +78,10 @@ Todo el proceso de creacion de funciones y del modelo (además de los archivos .
 En este punto, fue necesario el uso de un entorno virtual, creado en la carpeta local del proyecto, ya que ayuda a garantizar la consistencia, la reproducibilidad y la portabilidad del proyecto al implementarlo en diferentes entornos o servicios en la nube, como lo es render.
 Para poder deployar nuestras funciones en Fast API usamos render, cuyo plan gratuito cuenta con 512mb de almacenamiento y 0.15 CPU, es por esto que fue necesario guardar los datos usados en las funciones como formato parquet y reducir las tablas lo máximo posible.
 
-En render se usó la funcion de Web Services, se vinculó el repositorio 'https://github.com/StivenLopez712/Deploy_API'(se creó un repositorio solamente para el deploy con el fin de agilizar el proceso), y se configuró render con base a los pasos proporcionados en 'https://github.com/StivenLopez712/Deploy_AP'.
+En render se usó la funcion de Web Services, se vinculó el repositorio 'https://github.com/StivenLopez712/Deploy_API' (se creó un repositorio solamente para el deploy con el fin de agilizar el proceso), y se configuró render con base a los pasos proporcionados en 'https://github.com/StivenLopez712/Deploy_AP'.
 En el archivo main.py se colocaron las funciones ya creadas, cada una con su respectivo '(@app.get(‘/’))', adicionalmente, en el repo yacen los archivos .parquet necesarios, y los archivos requirementes.txt y docker.txt que necesita render.
 
-Desde render podemos controlar cuando esté o no disponible nuestra API, el link de a misma es: 'https://deploy-api-i7um.onrender.com/docs', en ella podremos encontrar las 5 funciones y el modelo de recomendación, basta con desplegar la pestaña corespondiente a la funcion deseada, clickear en 'Try Out' y brindar el parametro de entrada correspondiente.</p>
+Desde render podemos controlar cuando esté o no disponible nuestra API, el link de a misma es: 'https://deploy-api-i7um.onrender.com/docs', en ella podremos encontrar las 5 funciones y el modelo de recomendación, basta con desplegar la pestaña corespondiente a la funcion deseada, clickear en 'Try Out' y brindar el parametro de entrada correspondiente, como se ve en el video agregado al final de este readme.</p>
 
 ## Conclusiones
 
