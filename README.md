@@ -94,5 +94,5 @@ Desde render podemos controlar cuando esté o no disponible nuestra API, el link
 - Las herramientas usadas principalmente fueron:
    Visual Studio Code, Jupyter Notebook, Python, NumPy, Pandas, Matplotlib, scikit-learn, Render, FastAPI, Git, GitHub, Pyarrow y Markdown.
 
-#**LINK AL VIDEO:**
+**<p align="center">LINK AL VIDEO: </p>**
 https://youtu.be/sgdk6ikoDIU
