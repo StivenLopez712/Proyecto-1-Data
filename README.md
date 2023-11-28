@@ -1,5 +1,5 @@
 **<p align="center">Proyecto individual 1</p>**
-<p align="center">>MACHINE LEARNING OPERATIONS (MLOPS)</p
+**<p align="center">MACHINE LEARNING OPERATIONS (MLOPS)</p**
 
 ## Introducción
 <p style="text-align: justify;">Durante este proyecto se asumió el rol de un ingeniero de datos y un cientifico de datos (MLOPs engineer), trabajando para la empresa de STEAM, lacual es una plataforma de distribución digital de videojuegos desarrollada por Valve Corporation, lanzada en septiembre de 2003 buscando brindar actualizaciones automáticas para sus productos. Posteriormente se expandió y empezó a incluir títulos de terceros. Cuenta con una base de usuarios que supera los 325 millones, y un catálogo alberga más de 25,000 juegos. Cabe resaltar que las cifras proporcionadas por SteamSpy solo están disponibles hasta el año 2017, puesto que a principios de 2018 Steam implementó restricciones en el consumo de sus estadísticas. 
