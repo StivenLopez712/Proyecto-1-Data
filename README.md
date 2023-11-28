@@ -95,4 +95,5 @@ Desde render podemos controlar cuando esté o no disponible nuestra API, el link
    Visual Studio Code, Jupyter Notebook, Python, NumPy, Pandas, Matplotlib, scikit-learn, Render, FastAPI, Git, GitHub, Pyarrow y Markdown.
 
 **<p align="center">LINK AL VIDEO: </p>**
-https://youtu.be/sgdk6ikoDIU
+
+https://www.youtube.com/watch?v=sgdk6ikoDIU
